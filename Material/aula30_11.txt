@@ -1,0 +1,31 @@
+Ficha8 DSS
+
+EX 1- Tabela
+
+Registo(idR  ,entrada,saida ,       codPar  (Foreign), id (Foreign))
+identificador (id , Matricula (Foreign))
+tipo de viatura (idTV,nome)
+Parque(codPar)
+Viatura(Matricula ,idTV(Foreign),nif(Foreign))
+Utente (idU)
+Preços (codPar(Foreign) , id (Foreign),preço)
+
+
+--------------------------------
+
+A seguir trocar os Maps por algo q funcione na base de dados
+				/------------------------------------------------------------------TipoViaturaa
+			GesPark     ---------------------------------------			  |
+			/	\	 		      |			  |
+		             /		   \ 			      |			  |
+		ParqueDAO	RegistoDAO<-               IdentificadorDAO		  |
+	-get(codPar):Parque  \	
+	\        \------------------    |			  |
+		     / 	       \ 		  \  		\      |			  |
+		   /(tracejada)   \--------------->Registo                    \ Identificador		  |
+		  /                                           -codPar				\	  |
+		Parque                                         				  \	  |
+	Map para preço							Viatura <--|
+		/                                                                           NIFDAO ------------MapDe nome
+	             /
+	       Preço

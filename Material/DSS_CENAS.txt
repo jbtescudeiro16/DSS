@@ -1,0 +1,6 @@
+
+Temos que perguntat todos os problemas relacionados com a ma utilização do site por parte do utilizdor.
+
+ir ao excel -> identificar os metodos 
+subdividar cada metodo por subsistema .
+para cada subsistema fazer o diagrama de classes 

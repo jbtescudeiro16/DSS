@@ -1,0 +1,22 @@
+Use Case :  "Pórtico "
+Descrição : Pórtico regista 
+Cenário 0
+	Pré Condição : True 
+	Pós Condição : A passagem pelo pórtico ficou registada
+Fluxo normal :
+1. Veículo passa no pórtico
+2. Pórtico lê o identificador da viatura
+3. Pórtico comunica o identificador do veículo e do pórtico ao isistema 
+4.Sistema verifica que o identificador da matrícula é válido 
+5.Sistema regista passagem no pórtico (identificador,hora e local)
+
+
+Fluxo Alternativo 1- [Identificador de matrícula inválido (passo 3)]
+4.1. Sistema verifica que o identificador não existe 
+4.2. Sistema comunica informação ao pórtico 
+4.3. Pórtico comunica a fotografia 
+4.4. Sistema procede à identificação do veículo através da fotografia
+
+Fluxo Alternativo2 . [Pórtico não consegue ler identificador] (passo2)
+2.1 Pórtico comunica foto e nº de pórtico
+2.2 Sistema regista foto para posterior identficação do veículo, data,hora e pórtico
